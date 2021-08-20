@@ -116,7 +116,10 @@ def intensity_vs_time(frame_directory, crop=[]):
 	plt.scatter(frames, intensities, s=1)
 
 	## Plot min
-	# plt.scatter(frames, intensities, s=1)
+	plt.scatter(minIndices[0][0], minIntensity, s=2, color='g')
+
+	## Plot max
+	plt.scatter(maxIndices[0][0], maxIntensity, s=2, color='r')
 
 	## Show plot
 	plt.show()
